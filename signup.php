@@ -4,7 +4,13 @@ session_start();
     include("connection.php");
     include("functions.php");
 
-    $user_data = check_login($con);
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+        $user_name = $_POST['user_name'];
+        $password = $_POST['password'];
+
+
+    }
 ?>
 
 <!DOCTYPE html>
