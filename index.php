@@ -1,6 +1,8 @@
 <?php
+session_start();
 
-
+    $_SESSION;
+    
 
 ?>
 
@@ -13,6 +15,13 @@
     <title>My Webiste</title>
 </head>
 <body>
+
+<h1>This is the index page</h1>
+
+<button><a href="logout.php">Logout</a></button>
+
+<br>
+Hello, Username.
     
 </body>
 </html>
